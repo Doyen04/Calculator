@@ -49,7 +49,7 @@ article {
 
 main {
     background-color: lightgrey;
-    width: 80%;
+    width: 300px;
     height: 95%;
     position: relative;
     padding: 10px;
@@ -178,8 +178,8 @@ main:before {
     bottom: 10%;
     right: 95%;
     left: 0%;
-    width: 2.2vmax;
-    border-radius: 0% 900% 100% 0%;
+    width: 1.5vmax;
+    border-radius: 0% 900% 10% 0%;
 
 }
 
@@ -190,8 +190,8 @@ main:after {
     top: 40%;
     bottom: 10%;
     right: 0%;
-    width: 2.2vmax;
-    border-radius: 900% 0% 0% 100%;
+    width: 1.5vmax;
+    border-radius: 900% 0% 0% 10%;
 
 }
 
@@ -207,7 +207,7 @@ footer:before {
     content: "";
     position: absolute;
     /* background-color: ; */
-    border-right: 2.2vmax solid #536870;
+    border-right: 1.5vmax solid #536870;
     border-radius: 0 0 100px 0;
     top: 0px;
     right: 10px;
@@ -219,7 +219,7 @@ footer:after {
     content: "";
     position: absolute;
     /* background-color: ; */
-    border-left: 2.2vmax solid #536870;
+    border-left: 1.5vmax solid #536870;
     border-radius: 0 0 0 100px;
     top: 0px;
     left: -10px;
