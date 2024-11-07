@@ -1,0 +1,110 @@
+<!-- Created by D Doyen -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+</head>
+
+<body>
+    <input type="alphanumeric" id="hideview" name="hide" readonly>
+    <div id="store"></div>
+
+    <main>
+        <p>CASIO BY D DOYEN<br>2022</p>
+        <header>
+
+        </header>
+        <section id="view">
+            <div id="icon"></div>
+            <input type="alphanumber" id="letterview" name="input" readonly>
+            <div id="answer"></div>
+        </section>
+        <section id="control">
+            <button onclick=shift() id="btn1">Shift</button>
+            <button id="btn2">Alpha</button>
+            <button id="cenbtn">Replay</button>
+            <button id="btn3">Mode</button>
+            <button onclick=turnon() id="btn4">ON</button>
+        </section>
+        <section id="advance">
+            <button id="btn5"></button>
+            <button id="btn6"></button>
+            <button onclick=inverse() id="btn7">x<sup>-1</sup></button>
+            <button onclick=numbtn("!") id="btn8">!</button>
+        </section>
+        <section id="advanced">
+            <div id="topadvanced">
+                <button id="btn9"></button>
+                <button onclick=stdfrm("^(") id="btn10">^</button>
+                <button onclick=powtw("²") id="btn11">x²</button>
+                <button onclick=powtw("³") id="btn12">x³</button>
+                <button onclick=log("log(") id="btn13">log(</button>
+                <button onclick=log("In(") id="btn14">In</button>
+            </div>
+            <div id="topadvanced2">
+                <button id="btn15"></button>
+                <button onclick=sqrt("√") id="btn16">√</button>
+                <button id="btn17">hyp</button>
+                <button onclick=sct("sin(") id="btn18">sin(</button>
+                <button onclick=sct("cos(") id="btn19">cos(</button>
+                <button onclick=sct("tan(") id="btn20">tan(</button>
+            </div>
+            <div id="topadvanced3">
+                <button id="btn21"></button>
+                <button onclick=piE("pi") id="btn22">&#x03C0</button>
+                <button onclick=bracket("(") id="btn23">(</button>
+                <button onclick=bracket(")") id="btn24">)</button>
+                <button onclick=piE("E") id="btn25">E</button>
+                <button id="btn26"></button>
+            </div>
+        </section>
+        <section id="number">
+            <div id="number1">
+                <button onclick=numbtn(7) id="btn27">7</button>
+                <button onclick=numbtn(8) id="btn28">8</button>
+                <button onclick=numbtn(9) id="btn29">9</button>
+                <button onclick=del() id="btn30">Del</button>
+                <button onclick=turnoff() id="btn31">AC</button>
+            </div>
+            <div id="number2">
+                <button onclick=numbtn(4) id="btn32">4</button>
+                <button onclick=numbtn(5) id="btn33">5</button>
+                <button onclick=numbtn(6) id="btn34">6</button>
+                <button onclick=symbol("*") id="btn35">&#x00D7</button>
+                <button onclick=symbol("/") id="btn36">÷</button>
+            </div>
+            <div id="number3">
+                <button onclick=numbtn(1) id="btn37">1</button>
+                <button onclick=numbtn(2) id="btn38">2</button>
+                <button onclick=numbtn(3) id="btn39">3</button>
+                <button onclick=symbol("+") id="btn40">+</button>
+                <button onclick=symbol("-") id="btn41">-</button>
+            </div>
+            <div id="number4">
+                <button onclick=numbtn(0) id="btn42">0</button>
+                <button onclick=symbol(".") id="btn43">.</button>
+                <button onclick=stdfrm("e") id="btn44">*10<sup id="sup">x</sup></button>
+                <button onclick=answ() id="btn45">Ans</button>
+                <button onclick=equal() id="btn46">=</button>
+            </div>
+        </section>
+        <footer></footer>
+    </main>
+    <article id="art">
+        <svg id="svg" height="300" width="300">
+            <polyline id="lines" points=""  
+                style="fill:none; stroke:blue;stroke-width:3; stroke-linejoin:round; stroke-linecap:round;" />
+            <polyline id="lines2" points=""  
+                style="fill:none;stroke:lightblue;stroke-width:3; stroke-linejoin:round; stroke-linecap:round;" />
+        </svg>
+    </article>
+</body>
+<script>
+    alert("\t\t\tSIMPLE MANUAL \nThis is a simple clone of my favorite calculator \nThere might be some few bugs but i would fix such bugs later \nTry and inform me of any bugs if you see or notice any \n Remember this calculator is strict it wont allow double arithmetic signs \n Inserting of bracket without numbers \n and clicking the same bracket button twice and other rules i wont talk about\n Be careful with raise to power\nSome buttons are inactive\nDont forget to give a like")
+    alert("\t\t\tINACTIVE BUTTONS \nButtons like \nMode\nalpha\nReplay\nAnd buttons without names are inactive")
+    alert("To use calculator click the ON BUTTON\nAt the top right corner of the calculator \n To turn off click SHIFT then click AC button")
+</script>
+
+</html>
