@@ -1,0 +1,362 @@
+/* Created by D Doyen */
+
+* {
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+#hideview,
+i {
+    color: black;
+}
+
+#hideview {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    z-index: 5;
+    left: 0;
+}
+
+#store,
+#hideview {
+    width: 0;
+}
+
+#btn4 {
+    background-color: crimson;
+}
+
+p {
+    width: 40%;
+    color: crimson;
+    position: absolute;
+    text-align: center;
+}
+
+body,
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    height: 100vh;
+}
+
+main {
+    background-color: lightgrey;
+    width: 80%;
+    height: 95%;
+    position: relative;
+    padding: 10px;
+    border-radius: 20px 20px 50px 50px;
+    border-left: solid #536870 5px;
+    border-right: solid #536870 5px;
+    border-top: solid #536870 2.5px;
+    border-bottom: solid #536870 2.5px;
+    display: none;
+}
+
+header {
+    width: 55%;
+    height: 10%;
+    background-color: lightgrey;
+    float: right;
+    border-radius: 10px;
+    color: grey;
+    padding: 4vmin 0 3vmin 0;
+    font-size: 4vmin;
+    text-align: center;
+    margin-bottom: 2%;
+    box-shadow: inset 8px 8px 10px grey, inset -5px -5px 5px white
+}
+
+#view {
+    width: 98%;
+    height: 20%;
+    clear: both;
+    margin-left: 1%;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: inset 8px 8px 10px grey, inset -5px -5px 5px white
+}
+
+#icon {
+    width: 100%;
+    height: 9%;
+    display: flex;
+    justify-content: space-around;
+    color: black;
+    font-size: 10px;
+}
+
+#letterview {
+    width: 100%;
+    height: 45%;
+    padding: 5px;
+    background-color: transparent;
+    text-align: left;
+    color: black;
+}
+
+#answer {
+    width: 100%;
+    height: 45%;
+    text-align: right;
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#control {
+    width: 100%;
+    height: 9%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: lightgrey;
+    border-radius: 50% / 30%;
+    border-bottom: 3px solid white;
+}
+
+button {
+    width: 10%;
+    height: 40%;
+    background-color: #536870;
+    position: relative;
+    z-index: 6;
+    font-size: 11px;
+    box-shadow: -5px -5px 5px white;
+}
+
+#cenbtn {
+    width: 16%;
+    height: 80%;
+    top: 45%;
+    border-radius: 50%;
+}
+
+#btn2,
+#btn3 {
+    top: 10%;
+}
+
+#btn1,
+#btn2 {
+    border-radius: 50% 5px 5px 50%;
+    transform: rotate(5deg);
+}
+
+#btn3,
+#btn4 {
+    border-radius: 5px 50% 50% 5px;
+    transform: rotate(-5deg);
+}
+
+#control:before {
+    content: '';
+    position: absolute;
+    width: 20%;
+    height: 10%;
+    left: 40%;
+    top: 36%;
+    z-index: 5;
+    border-radius: 50%;
+    border-bottom: 3px solid white;
+    background-color: lightgrey;
+}
+
+main:before {
+    content: '';
+    position: absolute;
+    background-color: #536870;
+    top: 40%;
+    bottom: 10%;
+    right: 95%;
+    left: 0%;
+    width: 2.2vmax;
+    border-radius: 0% 900% 100% 0%;
+
+}
+
+main:after {
+    content: '';
+    position: absolute;
+    background-color: #536870;
+    top: 40%;
+    bottom: 10%;
+    right: 0%;
+    width: 2.2vmax;
+    border-radius: 900% 0% 0% 100%;
+
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    /* background-color: ; */
+}
+
+footer:before {
+    content: "";
+    position: absolute;
+    /* background-color: ; */
+    border-right: 2.2vmax solid #536870;
+    border-radius: 0 0 100px 0;
+    top: 0px;
+    right: 10px;
+    width: 20px;
+    height: 100%;
+}
+
+footer:after {
+    content: "";
+    position: absolute;
+    /* background-color: ; */
+    border-left: 2.2vmax solid #536870;
+    border-radius: 0 0 0 100px;
+    top: 0px;
+    left: -10px;
+    width: 20px;
+    height: 100%;
+}
+
+#advance {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    /* background-color: ; */
+    position: relative;
+    z-index: 4;
+}
+
+#btn5,
+#btn8 {
+    top: -10%;
+    border-radius: 10px 10px 50% 50%;
+}
+
+#btn6 {
+    left: -5%;
+    border-radius: 10px 10px 50% 50%;
+}
+
+#btn7 {
+    left: 5%;
+    border-radius: 10px 10px 50% 50%;
+}
+
+#advanced {
+    width: 97%;
+    margin-left: 1%;
+    height: 20%;
+    /* background-color: ; */
+}
+
+#topadvanced,
+#topadvanced2,
+#topadvanced3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 33.3%;
+    /* background-color: ; */
+}
+
+#topadvanced>button {
+    border-radius: 10px 10px 50% 50%;
+    height: 70%;
+    font-size: 11px;
+}
+
+#topadvanced2>button {
+    border-radius: 10px 10px 50% 50%;
+    height: 70%;
+    font-size: 11px;
+}
+
+#topadvanced3>button {
+    border-radius: 10px 10px 50% 50%;
+    height: 70%;
+    font-size: 11px;
+}
+
+#number {
+    width: 98%;
+    height: 30%;
+    margin-left: 1%;
+    color: black;
+    /* background-color: ; */
+}
+
+#number1,
+#number2,
+#number3,
+#number4 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 25%;
+    /* background-color: ; */
+}
+
+#btn30,
+#btn31 {
+    background-color: orange;
+    color: black;
+}
+
+#btn27,
+#btn28,
+#btn29 {
+    background-color: white;
+    color: black;
+}
+
+#number1>button {
+    height: 60%;
+    border-radius: 10px;
+    box-shadow: -5px -5px 5px grey;
+}
+
+#number2>button {
+    height: 60%;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    box-shadow: -5px -5px 5px grey;
+}
+
+#number3>button {
+    height: 60%;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    box-shadow: -5px -5px 5px grey;
+}
+
+#number4>button {
+    height: 60%;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    box-shadow: -5px -5px 5px grey;
+}
+
+sup {
+    color: white;
+}
+
+#sup {
+    color: black;
+}
