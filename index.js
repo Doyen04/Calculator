@@ -1,4 +1,4 @@
-// Created by D Doyen
+/* Created by Doyen04 on 2023-03-30 */
 
 function date() {
     var head = document.getElementsByTagName("header")[0]
